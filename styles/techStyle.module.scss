@@ -1,0 +1,24 @@
+@import "./declaration.module.scss";
+
+.technologies {
+  @include displayRow();
+  justify-content: space-evenly;
+  text-align: center;
+  .techCard {
+    @include displayCol();
+    box-shadow: 10px 5px 10px rgb(97, 97, 97);
+    background-color: #302f2f;
+    font-weight: lighter;
+    font-size: larger;
+    padding: 2rem;
+    max-width: max(20%, 10rem);
+
+    h3 {
+      font-weight: 300;
+      font-size: 30px;
+    }
+    .highlight {
+      font-weight: bold;
+    }
+  }
+}

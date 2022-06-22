@@ -1,4 +1,8 @@
-import { footer, connects, socialFooter } from "../../styles/Main.module.scss";
+import {
+  footer,
+  connects,
+  socialFooter,
+} from "../../styles/footerStyle.module.scss";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";

@@ -1,0 +1,26 @@
+@import "./declaration.module.scss";
+
+.photoshop {
+  @include displayCol();
+  justify-content: space-around;
+
+  .carouselStack {
+    .cardWide {
+      width: 60%;
+      margin: 0 auto 3rem auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgb(134, 134, 134);
+      box-shadow: 0 0 20px rgb(134, 134, 134);
+    }
+    .cardPort {
+      width: 30%;
+      margin: 0 auto 3rem auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgb(134, 134, 134);
+      box-shadow: 0 0 20px rgb(134, 134, 134);
+    }
+    .carousel {
+      border-radius: 10px;
+    }
+  }
+}

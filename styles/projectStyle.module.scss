@@ -1,0 +1,69 @@
+@import "./declaration.module.scss";
+
+.projects {
+  @include displayCol();
+  align-items: center;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-around;
+    padding: 20px;
+    column-gap: 2rem;
+    row-gap: 3rem;
+  }
+  .proCard {
+    @include displayCol();
+    justify-content: space-evenly;
+    background-color: #302f2f;
+    border-radius: 10px;
+    padding: 10px;
+    width: 25rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    .proTags {
+      @include displayRow();
+      justify-content: flex-start;
+      p {
+        background-color: rgb(218, 173, 52);
+        padding: 5px;
+        margin-right: 10px;
+        align-self: center;
+        color: rgb(65, 55, 2);
+        font-weight: bold;
+        border-radius: 10px;
+      }
+    }
+
+    .liveButtons {
+      align-self: center;
+      .btn {
+        background: #222121;
+        box-shadow: 0px 5px 10px rgb(255, 255, 255);
+        padding: 10px 15px;
+        border-radius: 28px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        float: right;
+      }
+      :hover {
+        transition: ease 0.6s;
+        box-shadow: 0px 5px 10px #067ec4;
+        background: white;
+        color: black;
+      }
+    }
+  }
+  #seeAll {
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    :hover {
+      color: red;
+    }
+  }
+}

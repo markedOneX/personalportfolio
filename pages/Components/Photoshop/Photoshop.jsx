@@ -5,7 +5,7 @@ import {
   cardWide,
   cardPort,
   carousel,
-} from "../../../styles/Main.module.scss";
+} from "../../../styles/photoshopStyle.module.scss";
 import {
   ReactCompareSlider,
   ReactCompareSliderImage,

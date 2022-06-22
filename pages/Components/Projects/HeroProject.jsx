@@ -7,7 +7,7 @@ import {
   liveButtons,
   btn,
   seeAll,
-} from "../../../styles/Main.module.scss";
+} from "../../../styles/projectStyle.module.scss";
 import Link from "next/link";
 import { ProjectData } from "./ProjectData";
 

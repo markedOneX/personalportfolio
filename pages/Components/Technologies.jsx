@@ -3,7 +3,7 @@ import {
   technologies,
   techCard,
   highlight,
-} from "../../styles/Main.module.scss";
+} from "../../styles/techStyle.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { FiDatabase } from "react-icons/fi";
 
