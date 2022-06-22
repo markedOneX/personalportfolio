@@ -20,7 +20,7 @@ function HeroProject() {
       <div className={wrapper}>
         {ProjectData.slice(0, 3).map(
           ({ id, title, description, image, tags, visit }) => (
-            <div className={proCard} id={id}>
+            <div className={proCard} key={id}>
               <div>
                 <img src={image} />
               </div>
@@ -29,8 +29,8 @@ function HeroProject() {
               </div>
               <div>{description}</div>
               <div className={proTags}>
-                {tags.map((e) => (
-                  <p>{e}</p>
+                {tags.map((e, i) => (
+                  <p key={i}>{e}</p>
                 ))}
               </div>
               <div className={liveButtons}>

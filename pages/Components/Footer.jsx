@@ -7,11 +7,11 @@ import { AiOutlineMail } from "react-icons/ai";
 
 function Footer() {
   return (
-    <div class={footer} id="footer">
+    <div className={footer} id="footer">
       <div>
         <h1>Let's talk about how we can work together?</h1>
       </div>
-      <div class={connects}>
+      <div className={connects}>
         <a href="tel:9405266316">
           <FiPhoneCall size="2rem" />
         </a>

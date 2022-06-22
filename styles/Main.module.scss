@@ -1,16 +1,9 @@
-@mixin displayRow {
-  display: flex;
-  flex-direction: row;
-}
-@mixin displayCol {
-  display: flex;
-  flex-direction: column;
-}
+@import "./declaration.module.scss";
+
 .App {
   @include displayCol();
   margin: 0 7rem;
 }
-
 .displayRow {
   @include displayRow();
 }
@@ -23,207 +16,173 @@
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
-.header {
-  @include displayRow();
-  position: fixed;
-  background-color: #1d1d1d;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0);
-  height: 4rem;
-  justify-content: space-around;
-  align-items: center;
-  @media screen and (max-width: 640px) {
-    display: none;
-  }
-  .logo {
-    @include displayRow();
-    align-self: center;
-    width: 20%;
-    a {
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      font-weight: bold;
-    }
-  }
-  .navlinks {
-    @include displayRow();
-    width: 30%;
-    justify-content: space-around;
-    :hover {
-      transition: 0.2s ease;
-      background-color: rgb(59, 59, 59);
-    }
 
-    a {
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      font-weight: ligter;
-      padding: 7px;
-      border-radius: 5px;
-    }
-  }
-  .socialHeader {
-    @include displayRow();
-    justify-content: right;
-    width: 15%;
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 7px;
-      :hover {
-        transition: 0.5s ease;
-        color: rgb(247, 218, 56);
-      }
-    }
-  }
-}
-.hero {
-  @include displayRow();
-  align-items: center;
-  justify-content: space-between;
-  height: 100vh;
-  img {
-    clip-path: circle();
-    box-shadow: drop-shadow(47px 26px 5px #dedcdc);
-  }
-}
-.technologies {
-  @include displayRow();
-  width: 100%;
-  justify-content: space-around;
-  text-align: center;
-  .techCard {
-    @include displayCol();
-    padding: 30px;
-    background-color: #302f2f;
-    word-break: keep-all;
-    width: 30rem;
-    box-shadow: 10px 5px 10px rgb(97, 97, 97);
-    font-weight: lighter;
-    font-size: larger;
-    h3 {
-      font-weight: 300;
-      font-size: 30px;
-    }
-    .highlight {
-      font-weight: bold;
-    }
-  }
-}
-.projects {
-  @include displayCol();
-  align-items: center;
-  .wrapper {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-    padding: 20px;
-    column-gap: 2rem;
-    row-gap: 3rem;
-  }
-  .proCard {
-    @include displayCol();
-    justify-content: space-evenly;
-    background-color: #302f2f;
-    border-radius: 10px;
-    width: 20rem;
-    padding: 10px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 10px;
-    }
-    .proTags {
-      @include displayRow();
-      justify-content: flex-start;
-      p {
-        background-color: rgb(218, 173, 52);
-        padding: 5px;
-        margin-right: 10px;
-        align-self: center;
-        color: rgb(65, 55, 2);
-        font-weight: bold;
-        border-radius: 10px;
-      }
-    }
+// .hero {
+//   @include displayRow();
+//   align-items: center;
+//   justify-content: space-between;
+//   height: 100vh;
 
-    .liveButtons {
-      align-self: center;
-      .btn {
-        background: #222121;
-        box-shadow: 0px 5px 10px rgb(255, 255, 255);
-        padding: 10px 15px;
-        border-radius: 28px;
-        text-decoration: none;
-        font-size: 15px;
-        color: white;
-        float: right;
-      }
-      :hover {
-        transition: ease 0.6s;
-        box-shadow: 0px 5px 10px #067ec4;
-        background: white;
-        color: black;
-      }
-    }
-  }
-  #seeAll {
-    text-decoration: none;
-    font-size: 19px;
-    color: white;
-  }
-}
-.photoshop {
-  @include displayCol();
-  justify-content: space-around;
+//   .Headshot {
+//     width: 25rem;
+//     min-width: 15rem;
 
-  .carouselStack {
-    .cardWide {
-      width: 60%;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgb(134, 134, 134);
-      box-shadow: 0 0 20px rgb(134, 134, 134);
-    }
-    .cardPort {
-      width: 30%;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgb(134, 134, 134);
-      box-shadow: 0 0 20px rgb(134, 134, 134);
-    }
-    .carousel {
-      border-radius: 10px;
-    }
-  }
-}
-.footer {
-  @include displayCol();
-  align-items: center;
-  text-align: center;
-  background: rgb(41, 41, 41);
-  a {
-    padding: 0 3rem;
-    text-decoration: none;
-    color: rgb(151, 150, 150);
-    :hover {
-      color: #43afee;
-    }
-  }
-  .connects {
-    @include displayRow();
-    a {
-      color: white;
-      :hover {
-        color: rgb(253, 226, 69);
-      }
-    }
-  }
-  .socialFooter {
-    margin-bottom: 2rem;
-  }
-}
+//     img {
+//       clip-path: circle();
+//     }
+//   }
+// }
+// .technologies {
+//   @include displayRow();
+//   width: 100%;
+//   justify-content: space-around;
+//   text-align: center;
+//   .techCard {
+//     @include displayCol();
+//     padding: 30px;
+//     background-color: #302f2f;
+//     word-break: keep-all;
+//     width: 30rem;
+//     box-shadow: 10px 5px 10px rgb(97, 97, 97);
+//     font-weight: lighter;
+//     font-size: larger;
+//     h3 {
+//       font-weight: 300;
+//       font-size: 30px;
+//     }
+//     .highlight {
+//       font-weight: bold;
+//     }
+//   }
+// }
+// .projects {
+//   @include displayCol();
+//   align-items: center;
+//   .wrapper {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     justify-content: space-around;
+//     padding: 20px;
+//     column-gap: 2rem;
+//     row-gap: 3rem;
+//   }
+//   .proCard {
+//     @include displayCol();
+//     justify-content: space-evenly;
+//     background-color: #302f2f;
+//     border-radius: 10px;
+//     padding: 10px;
+//     width: 25rem;
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: contain;
+//       border-radius: 10px;
+//     }
+//     .proTags {
+//       @include displayRow();
+//       justify-content: flex-start;
+//       p {
+//         background-color: rgb(218, 173, 52);
+//         padding: 5px;
+//         margin-right: 10px;
+//         align-self: center;
+//         color: rgb(65, 55, 2);
+//         font-weight: bold;
+//         border-radius: 10px;
+//       }
+//     }
+
+//     .liveButtons {
+//       align-self: center;
+//       .btn {
+//         background: #222121;
+//         box-shadow: 0px 5px 10px rgb(255, 255, 255);
+//         padding: 10px 15px;
+//         border-radius: 28px;
+//         text-decoration: none;
+//         font-size: 15px;
+//         color: white;
+//         float: right;
+//       }
+//       :hover {
+//         transition: ease 0.6s;
+//         box-shadow: 0px 5px 10px #067ec4;
+//         background: white;
+//         color: black;
+//       }
+//     }
+//   }
+//   #seeAll {
+//     text-decoration: none;
+//     font-size: 19px;
+//     color: white;
+//     :hover {
+//       color: red;
+//     }
+//   }
+// }
+// .photoshop {
+//   @include displayCol();
+//   justify-content: space-around;
+
+//   .carouselStack {
+//     .cardWide {
+//       width: 60%;
+//       margin: 0 auto 3rem auto;
+//       border-radius: 10px;
+//       box-shadow: 0 0 20px rgb(134, 134, 134);
+//       box-shadow: 0 0 20px rgb(134, 134, 134);
+//     }
+//     .cardPort {
+//       width: 30%;
+//       margin: 0 auto 3rem auto;
+//       border-radius: 10px;
+//       box-shadow: 0 0 20px rgb(134, 134, 134);
+//       box-shadow: 0 0 20px rgb(134, 134, 134);
+//     }
+//     .carousel {
+//       border-radius: 10px;
+//     }
+//   }
+// }
+// .footer {
+//   @include displayCol();
+//   align-items: center;
+//   text-align: center;
+//   background: rgb(41, 41, 41);
+//   a {
+//     padding: 0 3rem;
+//     text-decoration: none;
+//     color: rgb(151, 150, 150);
+//     :hover {
+//       color: #43afee;
+//     }
+//   }
+//   .connects {
+//     @include displayRow();
+//     a {
+//       color: white;
+//       :hover {
+//         color: rgb(253, 226, 69);
+//       }
+//     }
+//   }
+//   .socialFooter {
+//     margin-bottom: 2rem;
+//   }
+// }
+
+// @media (max-width: 615px) {
+//   .hero {
+//     @include displayCol();
+//     margin: 5rem auto;
+//   }
+//   .technologies {
+//     @include displayCol();
+//     margin: auto;
+//   }
+//   .projects {
+//     margin: auto;
+//   }
+// }

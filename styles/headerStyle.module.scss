@@ -1,0 +1,60 @@
+@import "./declaration.module.scss";
+
+.header {
+  @media (max-width: 650px) {
+    @include displayCol();
+  }
+  @include displayRow();
+  position: fixed;
+  background-color: #1d1d1d;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  z-index: 100;
+
+  .logo {
+    align-self: center;
+    a {
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: white;
+      font-weight: bold;
+      #nameSty {
+        color: $accent;
+      }
+    }
+  }
+  .navlinks {
+    @include displayRow();
+    justify-content: space-around;
+    :hover {
+      transition: 0.2s ease;
+      background-color: rgb(59, 59, 59);
+    }
+
+    a {
+      @media (max-width: 650px) {
+        font-size: calc(1vw + 1rem);
+      }
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      font-weight: ligter;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  }
+  .socialHeader {
+    @include displayRow();
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 1rem;
+      :hover {
+        transition: 0.5s ease;
+        color: rgb(247, 218, 56);
+      }
+    }
+  }
+}

@@ -17,7 +17,7 @@ function allprojects() {
       </div>
       <div className={wrapper}>
         {ProjectData.map(({ id, title, description, image, tags, visit }) => (
-          <div className={proCard} id={id}>
+          <div className={proCard} key={id}>
             <div>
               <img src={image} />
             </div>

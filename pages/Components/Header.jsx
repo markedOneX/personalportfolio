@@ -3,9 +3,9 @@ import {
   logo,
   navlinks,
   socialHeader,
-} from "../../styles/Main.module.scss";
-import Link from "next/link";
+} from "../../styles/headerStyle.module.scss";
 
+import Link from "next/link";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -15,16 +15,13 @@ function Header() {
       <div className={logo}>
         <Link href="/">
           <a>
-            Shubham Adke
-            {/* <Image src={newlogo} width="50px" height="50px" /> */}
+            <span style={{ color: "rgb(253, 130, 82)" }}>Shubham</span>Adke
           </a>
         </Link>
       </div>
       <div className={navlinks}>
         <div>
-          <Link href="./#technologies">
-            <a>Technologies</a>
-          </Link>
+          <a href="./#technologies">Technologies</a>
         </div>
         <div>
           <Link href="/allprojects">
@@ -32,9 +29,7 @@ function Header() {
           </Link>
         </div>
         <div>
-          <Link href="./#footer">
-            <a>Connect</a>
-          </Link>
+          <a href="./#footer">Connect</a>
         </div>
       </div>
       <div className={socialHeader}>

@@ -8,10 +8,10 @@ import Technologies from "./Components/Technologies";
 export default function Home() {
   return (
     <div className={App}>
-      <Hero />
+      {/* <Hero />
       <Technologies />
       <Projects />
-      <Photoshop />
+      <Photoshop /> */}
     </div>
   );
 }

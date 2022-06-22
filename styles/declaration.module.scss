@@ -1,0 +1,11 @@
+@mixin displayRow {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin displayCol {
+  display: flex;
+  flex-direction: column;
+}
+
+$accent: rgb(253, 130, 82);

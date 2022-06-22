@@ -22,9 +22,10 @@ function Photoshop() {
       </div>
       <div className={carouselStack}>
         <div className={cardWide}>
-          <Carousel>
+          <Carousel showThumbs={false}>
             {BA.filter((e) => e.type == "wide").map((image) => (
               <ReactCompareSlider
+                key={image.id}
                 id={image.id}
                 itemOne={
                   <ReactCompareSliderImage src={image.before} loading="eager" />
@@ -37,9 +38,10 @@ function Photoshop() {
           </Carousel>
         </div>
         <div className={cardPort}>
-          <Carousel className={carousel}>
+          <Carousel className={carousel} showThumbs={false}>
             {BA.filter((e) => e.type == "portrait").map((image) => (
               <ReactCompareSlider
+                key={image.id}
                 id={image.id}
                 itemOne={
                   <ReactCompareSliderImage src={image.before} loading="eager" />
