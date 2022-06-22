@@ -14,7 +14,7 @@ import { ProjectData } from "./ProjectData";
 function HeroProject() {
   return (
     <div className={projects}>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1 className={titles}>Projects I've worked on in the past:</h1>
       </div>
       <div className={wrapper}>
@@ -42,9 +42,11 @@ function HeroProject() {
           )
         )}
       </div>
-      <Link href="/allprojects">
-        <a id={seeAll}>See All</a>
-      </Link>
+      <div style={{ textAlign: "center" }}>
+        <Link href="/allprojects">
+          <a id={seeAll}>See All</a>
+        </Link>
+      </div>
     </div>
   );
 }

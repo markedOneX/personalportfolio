@@ -3,14 +3,13 @@
 .hero {
   @include displayRow();
   margin: auto;
-  background: blueviolet;
   align-items: center;
   justify-content: space-between;
-  padding: min(6em, 8rem);
+  padding: 3rem;
 
   .Headshot {
     max-width: max(20rem, 30%);
-    min-width: 20rem;
+    min-width: 15rem;
   }
   img {
     clip-path: circle();

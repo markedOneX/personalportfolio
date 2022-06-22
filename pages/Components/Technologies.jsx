@@ -10,7 +10,7 @@ import { FiDatabase } from "react-icons/fi";
 function Technologies() {
   return (
     <section id="technologies">
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1 className={titles}>TECH STACK</h1>
       </div>
       <div className={technologies}>
