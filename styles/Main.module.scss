@@ -2,8 +2,11 @@
 
 .App {
   @include displayCol();
-  margin: 0 7rem;
 }
+.container {
+  margin: auto;
+}
+
 .displayRow {
   @include displayRow();
 }
@@ -17,21 +20,6 @@
   padding-bottom: 2rem;
 }
 
-// .hero {
-//   @include displayRow();
-//   align-items: center;
-//   justify-content: space-between;
-//   height: 100vh;
-
-//   .Headshot {
-//     width: 25rem;
-//     min-width: 15rem;
-
-//     img {
-//       clip-path: circle();
-//     }
-//   }
-// }
 // .technologies {
 //   @include displayRow();
 //   width: 100%;

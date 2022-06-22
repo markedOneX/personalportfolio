@@ -1,0 +1,22 @@
+@import "./declaration.module.scss";
+
+.hero {
+  @include displayRow();
+  margin: auto;
+  background: blueviolet;
+  align-items: center;
+  justify-content: space-between;
+  padding: min(6em, 8rem);
+
+  .Headshot {
+    max-width: max(20rem, 30%);
+    min-width: 20rem;
+  }
+  img {
+    clip-path: circle();
+  }
+
+  @media (max-width: 650px) {
+    @include displayCol();
+  }
+}

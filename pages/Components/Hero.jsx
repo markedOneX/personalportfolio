@@ -1,11 +1,11 @@
-import { hero, Headshot } from "../../styles/Main.module.scss";
+import { hero, Headshot } from "../../styles/heroStyle.module.scss";
 import headshot from "./Assets/Headshot.png";
 import Image from "next/image";
 
 function Hero() {
   return (
     <div className={hero} id="hero">
-      <div>
+      <div className="heroDes">
         <h1 style={{ fontWeight: "400", fontSize: "3rem" }}>
           Hey, <br />
           I'm Shubham
