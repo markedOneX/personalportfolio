@@ -2,25 +2,20 @@
 
 .photoshop {
   @include displayCol();
-  justify-content: space-around;
-
   .carouselStack {
     .cardWide {
-      width: 60%;
-      margin: 0 auto 3rem auto;
+      box-shadow: 0 0 20px rgb(134, 134, 134);
+      box-shadow: 0 0 20px rgb(134, 134, 134);
       border-radius: 10px;
-      box-shadow: 0 0 20px rgb(134, 134, 134);
-      box-shadow: 0 0 20px rgb(134, 134, 134);
+      max-width: calc(2.5vw + 60%);
+      margin: auto;
     }
     .cardPort {
-      width: 30%;
-      margin: 0 auto 3rem auto;
-      border-radius: 10px;
       box-shadow: 0 0 20px rgb(134, 134, 134);
       box-shadow: 0 0 20px rgb(134, 134, 134);
-    }
-    .carousel {
       border-radius: 10px;
+      max-width: calc(1vw + 40%);
+      margin: 3rem auto;
     }
   }
 }

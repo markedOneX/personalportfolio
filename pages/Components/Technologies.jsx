@@ -1,17 +1,17 @@
 import {
-  titles,
   technologies,
   techCard,
   highlight,
 } from "../../styles/techStyle.module.scss";
+import { titles } from "../../styles/Main.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { FiDatabase } from "react-icons/fi";
 
 function Technologies() {
   return (
     <section id="technologies">
-      <div style={{ textAlign: "center" }}>
-        <h1 className={titles}>TECH STACK</h1>
+      <div className={titles}>
+        <h1>TECH STACK</h1>
       </div>
       <div className={technologies}>
         <div className={techCard}>

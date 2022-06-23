@@ -1,19 +1,19 @@
 import {
   projects,
-  titles,
   wrapper,
   proCard,
   proTags,
   liveButtons,
   btn,
-} from "../styles/Main.module.scss";
+} from "../styles/projectStyle.module.scss";
+import { titles } from "../styles/Main.module.scss";
 import { ProjectData } from "./Components/Projects/ProjectData";
 
 function allprojects() {
   return (
     <div className={projects}>
-      <div>
-        <h1 className={titles}>PROJECTS</h1>
+      <div className={titles}>
+        <h2>PROJECTS</h2>
       </div>
       <div className={wrapper}>
         {ProjectData.map(({ id, title, description, image, tags, visit }) => (

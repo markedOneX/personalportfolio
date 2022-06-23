@@ -1,6 +1,6 @@
+import { titles } from "../../../styles/Main.module.scss";
 import {
   photoshop,
-  titles,
   carouselStack,
   cardWide,
   cardPort,
@@ -17,8 +17,8 @@ import { BA } from "./BA";
 function Photoshop() {
   return (
     <section className={photoshop}>
-      <div>
-        <h1 className={titles}>I'm pretty handy with Photoshop as well..</h1>
+      <div className={titles}>
+        <h1>I'm pretty handy with Photoshop as well..</h1>
       </div>
       <div className={carouselStack}>
         <div className={cardWide}>
@@ -28,10 +28,18 @@ function Photoshop() {
                 key={image.id}
                 id={image.id}
                 itemOne={
-                  <ReactCompareSliderImage src={image.before} loading="eager" />
+                  <ReactCompareSliderImage
+                    src={image.before}
+                    loading="eager"
+                    style={{ borderRadius: "10px" }}
+                  />
                 }
                 itemTwo={
-                  <ReactCompareSliderImage src={image.after} loading="eager" />
+                  <ReactCompareSliderImage
+                    src={image.after}
+                    loading="eager"
+                    style={{ borderRadius: "10px" }}
+                  />
                 }
               />
             ))}
@@ -44,10 +52,18 @@ function Photoshop() {
                 key={image.id}
                 id={image.id}
                 itemOne={
-                  <ReactCompareSliderImage src={image.before} loading="eager" />
+                  <ReactCompareSliderImage
+                    src={image.before}
+                    loading="eager"
+                    style={{ borderRadius: "10px" }}
+                  />
                 }
                 itemTwo={
-                  <ReactCompareSliderImage src={image.after} loading="eager" />
+                  <ReactCompareSliderImage
+                    src={image.after}
+                    loading="eager"
+                    style={{ borderRadius: "10px" }}
+                  />
                 }
               />
             ))}

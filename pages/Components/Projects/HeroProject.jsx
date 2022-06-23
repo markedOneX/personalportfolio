@@ -1,6 +1,5 @@
 import {
   projects,
-  titles,
   wrapper,
   proCard,
   proTags,
@@ -8,14 +7,15 @@ import {
   btn,
   seeAll,
 } from "../../../styles/projectStyle.module.scss";
-import Link from "next/link";
+import { titles } from "../../../styles/Main.module.scss";
 import { ProjectData } from "./ProjectData";
+import Link from "next/link";
 
 function HeroProject() {
   return (
     <div className={projects}>
-      <div style={{ textAlign: "center" }}>
-        <h1 className={titles}>Projects I've worked on in the past:</h1>
+      <div className={titles}>
+        <h2>Projects I've worked on in the past:</h2>
       </div>
       <div className={wrapper}>
         {ProjectData.slice(0, 3).map(
