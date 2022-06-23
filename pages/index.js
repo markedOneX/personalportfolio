@@ -5,11 +5,11 @@ import Technologies from "./Components/Technologies";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Hero />
       <Technologies />
       <Projects />
       <Photoshop />
-    </div>
+    </>
   );
 }

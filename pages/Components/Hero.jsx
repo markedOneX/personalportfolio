@@ -1,4 +1,5 @@
 import { hero, Headshot } from "../../styles/heroStyle.module.scss";
+import { liveButtons, btn } from "../../styles/projectStyle.module.scss";
 import headshot from "./Assets/Headshot.png";
 import Image from "next/image";
 
@@ -24,6 +25,26 @@ function Hero() {
           website for you using high level experience in web design and
           development knowledge, producing quality work.
         </h3>
+        <div
+          style={{
+            marginTop: "2rem",
+          }}
+        >
+          <a
+            href="#footer"
+            style={{
+              padding: "0.7rem",
+              background: "white",
+              borderRadius: "10px",
+              textDecoration: "none",
+              color: "black",
+              fontWeight: "bold",
+              fontSize: "1.2rem",
+            }}
+          >
+            Hire Me!
+          </a>
+        </div>
       </div>
       <div
         className={Headshot}

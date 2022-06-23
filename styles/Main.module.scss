@@ -2,6 +2,7 @@
 
 .App {
   @include displayCol();
+  background-color: white;
 }
 .container {
   padding: min(6em, 8rem);

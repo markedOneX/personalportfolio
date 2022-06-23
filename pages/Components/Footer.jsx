@@ -6,7 +6,7 @@ import {
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
-import { FiCodepen, FiPhoneCall } from "react-icons/fi";
+import { FiPhoneCall } from "react-icons/fi";
 import { AiOutlineMail } from "react-icons/ai";
 
 function Footer() {
@@ -37,9 +37,6 @@ function Footer() {
           </a>
           <a href="https://www.facebook.com/shubham.adke/" target="_blank">
             <RiFacebookCircleLine size="2rem" />
-          </a>
-          <a href="https://codepen.io/shubhamadke" target="_blank">
-            <FiCodepen size="2rem" />
           </a>
         </div>
       </div>
