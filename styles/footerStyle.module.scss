@@ -2,9 +2,7 @@
 
 .footer {
   background: rgb(41, 41, 41);
-  justify-content: space-around;
   text-align: center;
-  width: 100%;
 
   .connects {
     @include displayRow();

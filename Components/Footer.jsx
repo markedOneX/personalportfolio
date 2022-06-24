@@ -2,7 +2,7 @@ import {
   footer,
   connects,
   socialFooter,
-} from "../../styles/footerStyle.module.scss";
+} from "../styles/footerStyle.module.scss";
 import { GoMarkGithub } from "react-icons/go";
 import { FaLinkedin } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className={footer} id="footer">
       <div>
-        <h1>Let's talk about how we can work together?</h1>
+        <h1>Let&apos;s talk about how we can work together?</h1>
       </div>
       <div className={connects}>
         <a href="tel:9405266316">
@@ -29,13 +29,25 @@ function Footer() {
           <h3>Social Handles</h3>
         </div>
         <div>
-          <a href="https://github.com/markedOneX" target="_blank">
+          <a
+            href="https://github.com/markedOneX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GoMarkGithub size="2rem" />
           </a>
-          <a href="https://www.linkedin.com/in/shubham-adke/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/shubham-adke/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin size="2rem" />
           </a>
-          <a href="https://www.facebook.com/shubham.adke/" target="_blank">
+          <a
+            href="https://www.facebook.com/shubham.adke/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <RiFacebookCircleLine size="2rem" />
           </a>
         </div>

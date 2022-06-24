@@ -2,8 +2,8 @@ import {
   technologies,
   techCard,
   highlight,
-} from "../../styles/techStyle.module.scss";
-import { titles } from "../../styles/Main.module.scss";
+} from "../styles/techStyle.module.scss";
+import { titles } from "../styles/Main.module.scss";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { FiDatabase } from "react-icons/fi";
 

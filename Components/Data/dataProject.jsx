@@ -1,4 +1,4 @@
-export const ProjectData = [
+const dataProject = [
   {
     title: "My Website",
     description:
@@ -21,7 +21,7 @@ export const ProjectData = [
     description:
       "Fully dynamic responsive website integrated with backend and database",
     image: "https://i.imgur.com/A6wkTzO.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Bootstrap"],
+    tags: ["React", "Node.js", "MongoDB"],
     visit: "https://sselectronics.herokuapp.com/",
     id: 15,
   },
@@ -34,6 +34,7 @@ export const ProjectData = [
     visit: "https://markedonex.github.io/Crypto-Dashboard/",
     id: 21,
   },
+
   {
     title: "U.S GDP",
     description:
@@ -51,6 +52,16 @@ export const ProjectData = [
     visit: "https://codepen.io/shubhamadke/pen/OJOZaYy",
     id: 14,
   },
+
+  // {
+  //   title: "Drum Pad Machine",
+  //   description:
+  //     "Plug in your headphones and click on the buttons to unleash the musician in you.",
+  //   image: "https://i.imgur.com/TogZWOr.jpg",
+  //   tags: ["Javascript", "HTML", "CSS"],
+  //   visit: "https://codepen.io/shubhamadke/pen/yLPvdQK",
+  //   id: 11,
+  // },
   {
     title: "Exercise Tracker Microservice",
     description:
@@ -61,13 +72,13 @@ export const ProjectData = [
     id: 20,
   },
   {
-    title: "Drum Pad Machine",
+    title: "URL Shortner Microservice",
     description:
-      "Plug in your headphones and click on the buttons to unleash the musician in you.",
-    image: "https://i.imgur.com/TogZWOr.jpg",
-    tags: ["Javascript", "HTML", "CSS"],
-    visit: "https://codepen.io/shubhamadke/pen/yLPvdQK",
-    id: 11,
+      "URL shortner takes user's input link and shortens it for quick use.",
+    image: "https://i.imgur.com/wjAL4fE.jpg",
+    tags: ["Node.js", "HTML", "CSS"],
+    visit: "https://replit.com/@vkronizer/FCC-URL-Shortner",
+    id: 18,
   },
   {
     title: "Timestamp Microservice",
@@ -76,6 +87,23 @@ export const ProjectData = [
     tags: ["Node.js", "HTML", "CSS"],
     visit: "https://replit.com/@vkronizer/FCC-Timestamp-Microservice",
     id: 16,
+  },
+  {
+    title: "Request Header Parser Microservice",
+    description: "Backend project that returns user's system information",
+    image: "https://i.imgur.com/jM2URQZ.jpg",
+    tags: ["Node.js", "HTML", "CSS"],
+    visit:
+      "https://replit.com/@vkronizer/FCC-Request-Header-Parser-Microservice",
+    id: 17,
+  },
+  {
+    title: "File Metadata Microservice",
+    description: "Allows user to upload a file to server",
+    image: "https://i.imgur.com/ebXVBBt.jpg",
+    tags: ["Node.js", "HTML", "CSS"],
+    visit: "https://replit.com/@vkronizer/FCC-File-Metadata-Microservice",
+    id: 19,
   },
   {
     title: "Markdown Preview",
@@ -104,32 +132,14 @@ export const ProjectData = [
     id: 10,
   },
 
-  {
-    title: "File Metadata Microservice",
-    description: "Allows user to upload a file to server",
-    image: "https://i.imgur.com/ebXVBBt.jpg",
-    tags: ["Node.js", "HTML", "CSS"],
-    visit: "https://replit.com/@vkronizer/FCC-File-Metadata-Microservice",
-    id: 19,
-  },
-
-  {
-    title: "Random Color Generator",
-    description: "Generates random colors with click of a button",
-    image: "https://i.imgur.com/uw7tPjc.jpg",
-    tags: ["Javascript", "HTML", "CSS"],
-    visit: "https://codepen.io/shubhamadke/pen/xxXozgj",
-    id: 8,
-  },
-  {
-    title: "URL Shortner Microservice",
-    description:
-      "URL shortner takes user's input link and shortens it for quick use.",
-    image: "https://i.imgur.com/wjAL4fE.jpg",
-    tags: ["Node.js", "HTML", "CSS"],
-    visit: "https://replit.com/@vkronizer/FCC-URL-Shortner",
-    id: 18,
-  },
+  // {
+  //   title: "Random Color Generator",
+  //   description: "Generates random colors with click of a button",
+  //   image: "https://i.imgur.com/uw7tPjc.jpg",
+  //   tags: ["Javascript", "HTML", "CSS"],
+  //   visit: "https://codepen.io/shubhamadke/pen/xxXozgj",
+  //   id: 8,
+  // },
 
   {
     title: "Bitwise Calculator",
@@ -148,46 +158,40 @@ export const ProjectData = [
     visit: "https://codepen.io/shubhamadke/pen/eYexMWr",
     id: 9,
   },
-  {
-    title: "Rotary Buttons Container",
-    description: "Click on number 5 and see the numbers rotate!",
-    image: "https://i.imgur.com/oYMYuOC.jpg",
-    tags: ["Javascript", "HTML", "CSS"],
-    visit: "https://codepen.io/shubhamadke/pen/mdpJrzx",
-    id: 4,
-  },
-  {
-    title: "Request Header Parser Microservice",
-    description: "Backend project that returns user's system information",
-    image: "https://i.imgur.com/jM2URQZ.jpg",
-    tags: ["Node.js", "HTML", "CSS"],
-    visit:
-      "https://replit.com/@vkronizer/FCC-Request-Header-Parser-Microservice",
-    id: 17,
-  },
-  {
-    title: "Add Object Container",
-    description: "Add new object into an array",
-    image: "https://i.imgur.com/fZsUIlR.jpg",
-    tags: ["Javascript", "HTML", "CSS"],
-    visit: "https://codepen.io/shubhamadke/pen/LYOvYLg",
-    id: 5,
-  },
-  {
-    title: "Palindrome Checker",
-    description:
-      "A program that will enable you to check if the number is palindrome or not.",
-    image: "https://i.imgur.com/rLpvswi.jpg",
-    tags: ["Javascript", "HTML", "CSS"],
-    visit: "https://codepen.io/shubhamadke/pen/dyZaeWO",
-    id: 6,
-  },
-  {
-    title: "Integer to Roman Converter",
-    description: "Convert normal integer numbers into Roman",
-    image: "https://i.imgur.com/vqlLeOP.jpg",
-    tags: ["Javascript", "HTML", "CSS"],
-    visit: "https://codepen.io/shubhamadke/pen/JjOxvoj",
-    id: 7,
-  },
+  // {
+  //   title: "Rotary Buttons Container",
+  //   description: "Click on number 5 and see the numbers rotate!",
+  //   image: "https://i.imgur.com/oYMYuOC.jpg",
+  //   tags: ["Javascript", "HTML", "CSS"],
+  //   visit: "https://codepen.io/shubhamadke/pen/mdpJrzx",
+  //   id: 4,
+  // },
+
+  // {
+  //   title: "Add Object Container",
+  //   description: "Add new object into an array",
+  //   image: "https://i.imgur.com/fZsUIlR.jpg",
+  //   tags: ["Javascript", "HTML", "CSS"],
+  //   visit: "https://codepen.io/shubhamadke/pen/LYOvYLg",
+  //   id: 5,
+  // },
+  // {
+  //   title: "Palindrome Checker",
+  //   description:
+  //     "A program that will enable you to check if the number is palindrome or not.",
+  //   image: "https://i.imgur.com/rLpvswi.jpg",
+  //   tags: ["Javascript", "HTML", "CSS"],
+  //   visit: "https://codepen.io/shubhamadke/pen/dyZaeWO",
+  //   id: 6,
+  // },
+  // {
+  //   title: "Integer to Roman Converter",
+  //   description: "Convert normal integer numbers into Roman",
+  //   image: "https://i.imgur.com/vqlLeOP.jpg",
+  //   tags: ["Javascript", "HTML", "CSS"],
+  //   visit: "https://codepen.io/shubhamadke/pen/JjOxvoj",
+  //   id: 7,
+  // },
 ];
+
+export default dataProject;

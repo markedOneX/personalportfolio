@@ -1,14 +1,14 @@
-import Hero from "./Components/Hero";
-import Photoshop from "./Components/Photoshop/Photoshop";
-import Projects from "./Components/Projects/HeroProject";
-import Technologies from "./Components/Technologies";
+import Hero from "../Components/Hero";
+import Technologies from "../Components/Technologies";
+import HeroProject from "../Components/HeroProject";
+import Photoshop from "../Components/Photoshop";
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Technologies />
-      <Projects />
+      <HeroProject />
       <Photoshop />
     </>
   );

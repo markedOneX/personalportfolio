@@ -1,5 +1,5 @@
 //export wide and portrrait images and render them.
-export const BA = [
+const dataPhotoshop = [
   {
     id: 0,
     type: "wide",
@@ -81,3 +81,4 @@ export const BA = [
     after: "https://i.imgur.com/3NiG54X.jpg",
   },
 ];
+export default dataPhotoshop;

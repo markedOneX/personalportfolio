@@ -1,13 +1,12 @@
+import Link from "next/link";
+import { GoMarkGithub } from "react-icons/go";
+import { FaLinkedin } from "react-icons/fa";
 import {
   header,
   logo,
   navlinks,
   socialHeader,
-} from "../../styles/headerStyle.module.scss";
-
-import Link from "next/link";
-import { GoMarkGithub } from "react-icons/go";
-import { FaLinkedin } from "react-icons/fa";
+} from "../styles/headerStyle.module.scss";
 
 function Header() {
   return (
@@ -21,7 +20,9 @@ function Header() {
       </div>
       <div className={navlinks}>
         <div>
-          <a href="./#technologies">Technologies</a>
+          <Link href="./#technologies">
+            <a>Technologies</a>
+          </Link>
         </div>
         <div>
           <Link href="/allprojects">
@@ -29,17 +30,27 @@ function Header() {
           </Link>
         </div>
         <div>
-          <a href="./#footer">Connect</a>
+          <Link href="./#footer">
+            <a>Connect</a>
+          </Link>
         </div>
       </div>
       <div className={socialHeader}>
         <div>
-          <a href="https://www.linkedin.com/in/shubham-adke/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/shubham-adke/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin size="2rem" />
           </a>
         </div>
         <div>
-          <a href="https://github.com/markedOneX" target="_blank">
+          <a
+            href="https://github.com/markedOneX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <GoMarkGithub size="2rem" />
           </a>
         </div>

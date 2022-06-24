@@ -15,6 +15,7 @@
     background-color: #302f2f;
     border-radius: 10px;
     padding: 1rem;
+
     img {
       border-radius: 10px;
       object-fit: contain;
@@ -23,11 +24,12 @@
     .proTags {
       @include displayRow();
       justify-content: flex-start;
+
       p {
         background-color: rgb(218, 173, 52);
+        word-wrap: break-word;
         padding: 5px;
         margin-right: 10px;
-        align-self: center;
         color: rgb(65, 55, 2);
         font-weight: bold;
         border-radius: 10px;
