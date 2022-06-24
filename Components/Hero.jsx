@@ -20,9 +20,9 @@ function Hero() {
           }}
         >
           I&apos;m a web developer with expertise in frontend and exposure to
-          backend and database tehnlogies. I can create a fully responsive
-          dynamic website for you using high level experience in web design and
-          development knowledge, producing quality work.
+          backend and database technlogies. I can create a fully responsive
+          dynamic website for you using high level experience and development
+          knowledge in web design, producing quality work.
         </h3>
         <div
           style={{
