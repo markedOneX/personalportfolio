@@ -22,9 +22,7 @@ function Technologies() {
           <div>
             <p>
               Experience With{" "}
-              <span className={highlight}>
-                React, Next.js, Redux, Javascript, Bootstrap
-              </span>
+              <span className={highlight}>React, Next.js, Redux, Figma</span>
             </p>
           </div>
         </div>
